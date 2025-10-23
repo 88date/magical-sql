@@ -11,8 +11,6 @@ query.statement; //=> "SELECT * FROM books WHERE id = :1"
 query.values; //=> [id]
 
 pg.query(query); // Uses `text` and `values`.
-mysql.query(query); // Uses `sql` and `values`.
-oracledb.execute(query); // Uses `statement` and `values`.
 
 // Embed SQL instances inside SQL instances.
 const nested = sql`SELECT id FROM authors WHERE name = ${"Blake"}`;

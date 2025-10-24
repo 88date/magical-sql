@@ -1,7 +1,7 @@
 ## Usage
 
 ```js
-import sql, { empty, join, raw } from "sql-template-tag";
+const { sql, empty, join, raw } = require("magical-sql");
 
 const query = sql`SELECT * FROM books WHERE id = ${id}`;
 

@@ -122,4 +122,4 @@ function sql(strings, ...values) {
   return new MagicalSql(strings, values);
 }
 
-module.exports = { MagicalSql, sql, empty, bulk, join };
+module.exports = { MagicalSql, sql, empty, bulk, raw, join };
